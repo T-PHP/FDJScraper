@@ -1,78 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FDJ Scraper / Euromillions & Loto Scraper</title>
+<?php
+//SEO
+$seo['title'] = "Euromillions & Loto PHP Scraper";
+$seo['meta_description'] = "";
+//Include Header Page
+include ('header.php');
+?>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-      
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  
-  </head>
-  <body cz-shortcut-listen="true">
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-inverse">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">FDJ PHP SCRAPER</a>
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container-fluid">
+            <h1 class="jumbotron-heading">SCRAPER PHP EUROMILLIONS & LOTO</h1>
+            <p class="text-muted">Exemple PHP pour scraper les derniers résultats EuroMillions & Lotos.</p>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    </section>
 
-    <div class="container theme-showcase" role="main">
-        <div class="well">
-            <h1>PHP EUROMILLIONS &amp; LOTO SCRAPER</h1>
-           <div class="alert alert-info">
-                <p><strong>EN : </strong>PHP example to scrap Euromillions numbers.</p>
-                <p><strong>FR : </strong>Exemple PHP permettant de récupérer les résultats Euromillions via le site de la FDJ</p>
+    <div class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="" alt="Euromillions Scraper PHP" src="img/euromillions.png" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body text-center">
+                            <h4>Euromillions</h4>
+                            <p class="card-text">Découvrez les derniers résultats du tirage Euromillions.</p>
+                            <a href="euromillions.php" class="btn btn-primary text-uppercase">Voir les résultats EuroMillions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="" alt="Loto Scraper PHP" src="img/loto.png" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body text-center">
+                            <h4>Loto</h4>
+                            <p class="card-text">Découvrez les derniers résultats du tirage du Loto.</p>
+                            <a href="loto.php" class="btn btn-primary text-uppercase">Voir les résultats du Loto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1613ad5f2b1%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1613ad5f2b1%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.234375%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body text-center">
+                            <h4>Prochainement</h4>
+                            <p class="card-text">..........................................................................................................................................................</p>
+                            <a href="" class="btn btn-secondary text-uppercase btn-disable">Prochainement...</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text-center">
-                <button id="btn_euromillions" type="button" class="btn btn-lg btn-success text-uppercase">View Euromillions Results</button>
-                <button id="btn_loto" type="button" class="btn btn-lg btn-success text-uppercase">View Loto Results</button>
-            </div>
-            <p class="alert text-right">Javascript must be enabled to use this demonstration</p>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-6" id="content-euromillions"></div>
-            <div class="col-xs-12 col-md-6" id="content-loto"></div>
-        </div>
-    </div> <!-- /container -->
+    </div>
+</main>
 
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
-    <script type="text/javascript">
-        $( document ).ready(function() {
-            $( "#btn_euromillions" ).click(function() {
-                $( "#content-euromillions" ).load( "scrap-euromillions.php" );
-            });
-            $( "#btn_loto" ).click(function() {
-                $( "#content-loto" ).load( "scrap-loto.php" );
-            });
-        });
-    </script>
-</body>
-</html>
+<?php include ('footer.php'); ?>

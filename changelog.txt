@@ -1,0 +1,11 @@
+*** 03/02/2018 : v1.1.0 ***
+- Update to Bootstrap 4
+- Replace javascript one page system by multiples php pages
+- Add Font Awesome 4.7.0
+- Add SEO Optimizations (Title & Meta Description)
+- Add robots.txt
+- Add changelog.txt
+- Add favicon
+- Add demonstration link
+*** 03/07/2017 : v1.0.0 ***
+- First version
